@@ -1,0 +1,214 @@
+body {
+    font-family: "Playwrite ES Deco", cursive;
+    margin: 20px;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid rgb(34, 31, 31);
+}
+
+.logo {
+    height: 60px;
+
+}
+
+.menu_link {
+    text-decoration: none;
+    margin: 20px;
+
+}
+
+.menu_link:hover {
+    text-transform: uppercase;
+    color: rgb(130, 130, 232);
+}
+
+.head {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-icon {
+    display: none;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 20px;
+}
+
+.first-project {
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.container-first-project {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+
+}
+
+.heading-projects {
+    font-size: 22px;
+
+}
+
+.par-projects {
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.btn-project {
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    margin-left: 30px;
+}
+
+.btn-project:hover {
+    cursor: pointer;
+    background-color: rgb(87, 87, 121);
+}
+
+
+.project {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.project img {
+    transition: 1s;
+    display: block;
+}
+
+.project img:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 20px;
+    background-color: black;
+
+}
+
+.menu_link-footer {
+    text-decoration: none;
+    margin: 20px;
+    color: white;
+}
+
+
+.footer-link {
+    color: #FFF;
+}
+
+@media screen and (max-width: 768px) {
+
+    .main-container {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+
+    .bar_menu {
+        display: none;
+    }
+
+    .nav-icon {
+        display: flex;
+
+    }
+
+    .nav-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-container {
+        margin: 0;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        width: 380px;
+    }
+
+
+}
+
+@media screen and (max-width: 320px) {
+
+    .bar_menu {
+        display: none;
+    }
+
+    .nav-icon {
+        display: flex;
+
+    }
+
+    .nav-icn {
+        width: 30px;
+    }
+
+    .logo {
+        width: 40px;
+    }
+
+    .nav-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-container {
+        margin: 0;
+        width: 100px;
+    }
+
+    .first-project {
+        width: 270px;
+    }
+
+    img {
+        width: 200px;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        width: 280px;
+    }
+
+
+}
